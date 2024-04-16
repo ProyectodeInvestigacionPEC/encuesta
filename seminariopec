@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competencias digitales docentes. Encuesta a docentes de nivel secundario.</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p.description {
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .checkbox-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Competencias digitales docentes. Encuesta a docentes de nivel secundario.</h1>
+    <p class="description">Esta encuesta está dirigida a docentes de nivel secundario que se desempeñan en instituciones educativas de la Ciudad de Buenos Aires y que son, asimismo, estudiantes de la Universidad de la Ciudad de Buenos Aires. La encuesta tiene como propósito indagar en las competencias digitales de los docentes, en las prácticas de enseñanza que llevan adelante incorporando tecnologías digitales, y en sus consumos culturales. Responder esta encuesta toma x minutos. Sus respuestas serán tratadas de manera confidencial y no se revelará su identidad en los informes de investigación.</p>
+    <form id="surveyForm">
+       <form id="surveyForm">
+    <p>1. Nombre y Apellido:</p>
+    <input type="text" name="nombre-apellido" required>
+  
+    <p>2. Edad:</p>
+    <select name="edad">
+        <option value="menos-30">Menos de 30 años</option>
+        <option value="30-39">30 - 39 años</option>
+        <option value="40-49">40 - 49 años</option>
+        <option value="50-59">50 - 59 años</option>
+        <option value="60-o-mas">60 años o más</option>
+    </select>
+
+<p>3. Sexo:</p>
+    <select name="sexo">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+        <option value="no-binario">No binario</option>
+        <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+    </select>
+
+    <p>4. ¿Cuántos años de experiencia tiene como docente?</p>
+    <select name="experiencia-docente">
+        <option value="menos-1">Menos de 1 año</option>
+        <option value="1-5">1-5 años</option>
+        <option value="6-10">6-10 años</option>
+        <option value="11-15">11-15 años</option>
+        <option value="mas-de-15">Más de 15 años</option>
+    </select>
+
+<p>5. Señale el tipo de gestión de los establecimientos educativos en los que concentra su carga docente:</p>
+<input type="radio" id="gestion-publica" name="tipo-gestion" value="publica">
+<label for="gestion-publica">Gestión Pública</label><br>
+<input type="radio" id="gestion-privada" name="tipo-gestion" value="privada">
+<label for="gestion-privada">Gestión Privada</label><br>
+<input type="radio" id="gestion-mixta" name="tipo-gestion" value="mixta">
+<label for="gestion-mixta">Se distribuye equitativamente entre la gestión privada y pública</label><br>
+
+<p>6. Señale la/s asignatura/s en las que se desempeña como docente y el ciclo al que pertenece. Si el título de la asignatura no se corresponde exactamente con la materia que dicta, tilde la disciplina más afín al contenido que dicta.</p>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Ciclo Básico</th>
+            <th>Ciclo Orientado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Biología</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Biología"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Biología"></td>
+        </tr>
+        <tr>
+            <td>Historia</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Historia"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Historia"></td>
+        </tr>
+        <tr>
+            <td>Matemática</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Matemática"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Matemática"></td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Física"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Física"></td>
+        </tr>
+        <tr>
+            <td>Lengua y Literatura</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Lengua y Literatura"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Lengua y Literatura"></td>
+        </tr>
+        <tr>
+            <td>Geografía</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Geografía"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Geografía"></td>
+        </tr>
+        <tr>
+            <td>Formación Ética y Ciudadana - Derecho</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Formación Ética y Ciudadana - Derecho"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Formación Ética y Ciudadana - Derecho"></td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Química"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Química"></td>
+        </tr>
+        <tr>
+            <td>Idiomas</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Idiomas"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Idiomas"></td>
+        </tr>
+        <tr>
+            <td>Educación Física</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Educación Física"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Educación Física"></td>
+        </tr>
+        <tr>
+            <td>Artes - Plástica</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Artes - Plástica"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Artes - Plástica"></td>
+        </tr>
+        <tr>
+            <td>Música</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Música"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Música"></td>
+        </tr>
+        <tr>
+            <td>Economía/Contabilidad</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Economía/Contabilidad"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Economía/Contabilidad"></td>
+        </tr>
+        <tr>
+            <td>Filosofía</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Filosofía"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Filosofía"></td>
+        </tr>
+        <tr>
+            <td>Educación Sexual Integral</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Educación Sexual Integral"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Educación Sexual Integral"></td>
+        </tr>
+        <tr>
+            <td>Educación Tecnológica / Tecnologías de la Comunicación y la Información</td>
+            <td><input type="checkbox" name="asignaturas-basico" value="Educación Tecnológica / Tecnologías de la Comunicación y la Información"></td>
+            <td><input type="checkbox" name="asignaturas-orientado" value="Educación Tecnológica / Tecnologías de la Comunicación y la Información"></td>
+        </tr>
+        <tr>
+            <td>Otra</td>
+            <td><input type="text" name="asignaturas-basico-otra"></td>
+            <td><input type="text" name="asignaturas-orientado-otra"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>7. ¿Conoce y utiliza las herramientas, acciones o procesos detallados a continuación?</p>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>¿Conoce?</th>
+            <th>¿Utiliza?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Procesadores de textos (Word, Google Docs, otros)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-procesadores" value="si"> Sí <input type="radio" name="conoce-procesadores" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-procesadores" value="si"> Sí <input type="radio" name="utiliza-procesadores" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Hojas de cálculo (Excel, GoogleForms, otros)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-hojas" value="si"> Sí <input type="radio" name="conoce-hojas" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-hojas" value="si"> Sí <input type="radio" name="utiliza-hojas" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Herramientas para crear presentaciones (Power Point, Genially, Canvas, Prezi, otros)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-presentaciones" value="si"> Sí <input type="radio" name="conoce-presentaciones" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-presentaciones" value="si"> Sí <input type="radio" name="utiliza-presentaciones" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Herramientas para la comunicación en línea (correo electrónico, mensajería instantánea, chats, videoconferencias)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-comunicacion" value="si"> Sí <input type="radio" name="conoce-comunicacion" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-comunicacion" value="si"> Sí <input type="radio" name="utiliza-comunicacion" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Navegadores de internet (Google/Mozilla Firefox/Explorer)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-navegadores" value="si"> Sí <input type="radio" name="conoce-navegadores" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-navegadores" value="si"> Sí <input type="radio" name="utiliza-navegadores" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Redes sociales (Instagram/Facebook/Tik-Tok/Twitter "X"/Snapchat)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-redes-sociales" value="si"> Sí <input type="radio" name="conoce-redes-sociales" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-redes-sociales" value="si"> Sí <input type="radio" name="utiliza-redes-sociales" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Inteligencia Artificial (Chat GPT)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-ia" value="si"> Sí <input type="radio" name="conoce-ia" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-ia" value="si"> Sí <input type="radio" name="utiliza-ia" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Plataformas educativas (Moodle/Blackboard/EdModo/Google Classroom/Microsoft Teams)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-plataformas" value="si"> Sí <input type="radio" name="conoce-plataformas" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-plataformas" value="si"> Sí <input type="radio" name="utiliza-plataformas" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Portales educativos y otros recursos educativos abiertos (Educ.ar/ Sigamos Aprendiendo)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-portales" value="si"> Sí <input type="radio" name="conoce-portales" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-portales" value="si"> Sí <input type="radio" name="utiliza-portales" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Herramientas digitales para la seguridad y privacidad en línea</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-seguridad" value="si"> Sí <input type="radio" name="conoce-seguridad" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-seguridad" value="si"> Sí <input type="radio" name="utiliza-seguridad" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Herramientas para el almacenamiento y gestión de archivos y contenidos compartidos (p. e. Drive, Box, Dropbox, Office 365, etc.)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-almacenamiento" value="si"> Sí <input type="radio" name="conoce-almacenamiento" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-almacenamiento" value="si"> Sí <input type="radio" name="utiliza-almacenamiento" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Herramientas para la realidad aumentada</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-realidad" value="si"> Sí <input type="radio" name="conoce-realidad" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-realidad" value="si"> Sí <input type="radio" name="utiliza-realidad" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Herramientas que permiten la creación y edición de contenido multimedia (texto, audio, gráficos y video)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-multimedia" value="si"> Sí <input type="radio" name="conoce-multimedia" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-multimedia" value="si"> Sí <input type="radio" name="utiliza-multimedia" value="no"> No</td>
+        </tr>
+        <tr>
+            <td>Aplicaciones interactivas multimedia para el aprendizaje compartido o colaborativo tales como (wikis, blogs, juegos de escape, quizzes, muros colaborativos)</td>
+            <td class="checkbox-container"><input type="radio" name="conoce-aplicaciones" value="si"> Sí <input type="radio" name="conoce-aplicaciones" value="no"> No</td>
+            <td class="checkbox-container"><input type="radio" name="utiliza-aplicaciones" value="si"> Sí <input type="radio" name="utiliza-aplicaciones" value="no"> No</td>
+        </tr>
+        <!-- Agrega más filas según sea necesario -->
+    </tbody>
+</table>
+
+
+<script>
+function validarUtilizacion() {
+  var filasConoce = document.querySelectorAll("input[name^='conoce']");
+  filasConoce.forEach(function(fila) {
+    fila.addEventListener('change', function() {
+      var utiliza = this.closest("tr").querySelector("input[name^='utiliza']");
+      if (this.value === "no") {
+        utiliza.disabled = true;
+        utiliza.checked = false;
+      } else {
+        utiliza.disabled = false;
+      }
+    });
+  });
+}
+validarUtilizacion();
+</script>
+
+
+     <p>8. Señale cuáles son los propósitos para los que utiliza estas herramientas, acciones o procesos en sus prácticas docentes:</p>
+<table>
+    <thead>
+        <tr>
+            <th>Propósitos </th>
+            <th>Comunicación con autoridades y colegas</th>
+            <th>Comunicación con los estudiantes</th>
+            <th>Planificación de la clase</th>
+            <th>Actividades áulicas</th>
+            <th>Tareas que se asignan a los estudiantes</th>
+            <th>Evaluación del proceso de enseñanza-aprendizaje y seguimiento de los alumnos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Procesadores de textos (Word, Google Docs, otros)</td>
+            <td class="checkbox-container"><input type="checkbox" name="procesadores-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="procesadores-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="procesadores-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="procesadores-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="procesadores-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="procesadores-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Hojas de cálculo (Excel, GoogleForms, otros)</td>
+            <td class="checkbox-container"><input type="checkbox" name="hojas-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="hojas-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="hojas-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="hojas-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="hojas-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="hojas-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <!-- Repite este patrón para todas las categorías -->
+        <tr>
+            <td>Herramientas para crear presentaciones (Power Point, Genially, Canvas, Prezi, otros)</td>
+            <td class="checkbox-container"><input type="checkbox" name="presentaciones-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="presentaciones-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="presentaciones-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="presentaciones-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="presentaciones-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="presentaciones-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Herramientas para la comunicación en línea (correo electrónico, mensajería instantánea, chats, videoconferencias)</td>
+            <td class="checkbox-container"><input type="checkbox" name="comunicacion-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="comunicacion-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="comunicacion-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="comunicacion-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="comunicacion-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="comunicacion-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Navegadores de internet (Google/Mozilla Firefox/Explorer)</td>
+            <td class="checkbox-container"><input type="checkbox" name="navegadores-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="navegadores-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="navegadores-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="navegadores-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="navegadores-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="navegadores-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Redes sociales (Instagram/Facebook/Tik-Tok/Twitter "X"/Snapchat)</td>
+            <td class="checkbox-container"><input type="checkbox" name="redes-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="redes-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="redes-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="redes-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="redes-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="redes-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Inteligencia Artificial (Chat GPT)</td>
+            <td class="checkbox-container"><input type="checkbox" name="inteligencia-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="inteligencia-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="inteligencia-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="inteligencia-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="inteligencia-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="inteligencia-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Plataformas educativas (Moodle/Blackboard/EdModo/Google Classroom/Microsoft Teams)</td>
+            <td class="checkbox-container"><input type="checkbox" name="plataformas-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="plataformas-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="plataformas-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="plataformas-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="plataformas-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="plataformas-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Portales educativos y otros recursos educativos abiertos (Educ.ar/ Sigamos Aprendiendo)</td>
+            <td class="checkbox-container"><input type="checkbox" name="portales-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="portales-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="portales-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="portales-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="portales-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="portales-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Herramientas digitales para la seguridad y privacidad en línea</td>
+            <td class="checkbox-container"><input type="checkbox" name="seguridad-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="seguridad-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="seguridad-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="seguridad-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="seguridad-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="seguridad-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Herramientas para el almacenamiento y gestión de archivos y contenidos compartidos (p. e. Drive, Box, Dropbox, Office 365, etc.)</td>
+            <td class="checkbox-container"><input type="checkbox" name="almacenamiento-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="almacenamiento-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="almacenamiento-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="almacenamiento-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="almacenamiento-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="almacenamiento-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Herramientas para la realidad aumentada</td>
+            <td class="checkbox-container"><input type="checkbox" name="realidad-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="realidad-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="realidad-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="realidad-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="realidad-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="realidad-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Herramientas que permiten la creación y edición de contenido multimedia (texto, audio, gráficos y video)</td>
+            <td class="checkbox-container"><input type="checkbox" name="multimedia-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="multimedia-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="multimedia-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="multimedia-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="multimedia-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="multimedia-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+        <tr>
+            <td>Aplicaciones interactivas multimedia para el aprendizaje compartido o colaborativo tales como (wikis, blogs, juegos de escape, quizzes, muros colaborativos)</td>
+            <td class="checkbox-container"><input type="checkbox" name="aplicaciones-comunicacion-autoridades[]" value="autoridades"></td>
+            <td class="checkbox-container"><input type="checkbox" name="aplicaciones-comunicacion-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="aplicaciones-planificacion-clase[]" value="clase"></td>
+            <td class="checkbox-container"><input type="checkbox" name="aplicaciones-actividades-aulicas[]" value="aulicas"></td>
+            <td class="checkbox-container"><input type="checkbox" name="aplicaciones-tareas-estudiantes[]" value="estudiantes"></td>
+            <td class="checkbox-container"><input type="checkbox" name="aplicaciones-evaluacion-proceso[]" value="proceso"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<p>9. Indique en qué medida los siguientes espacios de formación digital han impactado en el desarrollo de sus destrezas y habilidades digitales docentes, en función de la escala proporcionada (bajo, moderado, alto).</p>
+<table>
+    <thead>
+        <tr>
+            <th>Ámbitos de Formación Digital/Impacto</th>
+            <th>Bajo</th>
+            <th>Moderado</th>
+            <th>Alto</th>
+            <th>No me capacité por esta vía</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Formación docente de base</td>
+            <td><input type="radio" name="formacion-impacto-1" value="bajo"></td>
+            <td><input type="radio" name="formacion-impacto-1" value="moderado"></td>
+            <td><input type="radio" name="formacion-impacto-1" value="alto"></td>
+            <td><input type="radio" name="formacion-impacto-1" value="ninguna"></td>
+        </tr>
+        <tr>
+            <td>Capacitación en el ámbito laboral (en la escuela)</td>
+            <td><input type="radio" name="formacion-impacto-2" value="bajo"></td>
+            <td><input type="radio" name="formacion-impacto-2" value="moderado"></td>
+            <td><input type="radio" name="formacion-impacto-2" value="alto"></td>
+            <td><input type="radio" name="formacion-impacto-2" value="ninguna"></td>
+        </tr>
+        <tr>
+            <td>Capacitaciones en instituciones educativas privadas o públicas</td>
+            <td><input type="radio" name="formacion-impacto-3" value="bajo"></td>
+            <td><input type="radio" name="formacion-impacto-3" value="moderado"></td>
+            <td><input type="radio" name="formacion-impacto-3" value="alto"></td>
+            <td><input type="radio" name="formacion-impacto-3" value="ninguna"></td>
+        </tr>
+        <tr>
+            <td>Aprendizaje informal (búsquedas en la web, redes sociales, colegas, estudiantes)</td>
+            <td><input type="radio" name="formacion-impacto-4" value="bajo"></td>
+            <td><input type="radio" name="formacion-impacto-4" value="moderado"></td>
+            <td><input type="radio" name="formacion-impacto-4" value="alto"></td>
+            <td><input type="radio" name="formacion-impacto-4" value="ninguna"></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<button type="submit">Enviar</button>
+</form>
+
+
+</body>
+</html>
